@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "name": "Job_App",
+    "slug": "Job_App",
+    "jsEngine": "hermes",
+    "experiments": {
+      "newArchEnabled": true
+    }
+  }
+}
