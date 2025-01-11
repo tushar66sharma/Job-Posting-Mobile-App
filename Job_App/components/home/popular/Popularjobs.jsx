@@ -12,6 +12,7 @@ import PopularJobCard from '../../common/cards/popular/PopularJobCard'
 import useFetch from '../../../hook/useFetch'
 
 import styles from './popularjobs.style'
+import { handleUrlParams } from 'expo-router/build/fork/getStateFromPath-forks'
 
 const Popularjobs = () => {
   const router=useRouter();
@@ -23,6 +24,12 @@ const Popularjobs = () => {
     },
   });
   // console.log(data);
+  const [selectedJob, setSelectedJob] = useState();
+
+  const handleCardPress = (item) => {
+    router.push(`/job-details/${item.job_id}`);
+    setSelectedJob(item.job_id);
+  };
 
   return (
     <View style={styles.container}>
@@ -39,10 +46,12 @@ const Popularjobs = () => {
             <Text>Something Went Wrong</Text>
           ):(
             <FlatList
-              data={[1,2,3,4,5,6,7 ]}
+              data={data}
               renderItem={({item})=>(
                 <PopularJobCard
                   item={item}
+                  selectedJob={selectedJob}
+                  handleCardPress={handleCardPress}
                 />
             )}
             keyExtractor={item=>item?.job_id}
