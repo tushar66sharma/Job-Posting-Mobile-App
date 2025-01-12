@@ -10,6 +10,22 @@
     "jsEngine": "hermes",
     "experiments": {
       "newArchEnabled": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a23ec538-ecd8-43a2-aa91-f1742b995f3f"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a23ec538-ecd8-43a2-aa91-f1742b995f3f"
+    },
+    "android": {},
+    "ios": {}
   }
 }
