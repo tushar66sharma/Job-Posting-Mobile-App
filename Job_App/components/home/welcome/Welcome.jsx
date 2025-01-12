@@ -32,7 +32,7 @@ const Welcome = ({searchTerm,setSearchTerm,handleClick}) => {
 
           />
         </View>
-        <TouchableOpacity style={styles.searchBtn} onPress={()=>{handleClick}}>
+        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
           <Image
             source={icons.search}
             resizemode='contain'
