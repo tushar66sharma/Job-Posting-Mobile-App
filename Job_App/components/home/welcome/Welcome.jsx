@@ -27,6 +27,7 @@ const Welcome = ({searchTerm,setSearchTerm,handleClick}) => {
         <TextInput
             style={styles.searchInput}
             value={searchTerm}
+            
             placeholder="what are you looking for?"
             onChangeText={(text)=>setSearchTerm(text)}
 

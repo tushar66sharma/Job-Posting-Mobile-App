@@ -25,7 +25,14 @@
     "updates": {
       "url": "https://u.expo.dev/a23ec538-ecd8-43a2-aa91-f1742b995f3f"
     },
-    "android": {},
-    "ios": {}
+    "android": {
+      "package": "com.tusharsharma66.Job_App"
+    },
+    "ios": {},
+    "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  }
   }
 }
